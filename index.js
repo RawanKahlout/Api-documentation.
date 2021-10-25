@@ -4,7 +4,6 @@ const app = express();
 const port = 3000;
  
 app.get('/downlaod-module',(req,res)=>{
-  console.log("here iam");
   const file = `${__dirname}/docs/Closet.zip`;
   res.download(file); 
 })
